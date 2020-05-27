@@ -14,31 +14,19 @@ afin que l'utilisateur puisse voir l'evolution de ces données.
 
 ### ANSIBLE
 
-Pour Ansible, vaut-il mieux créer un script qui gere la configuration
-de l'instance Scaleway ou un script qui gere la configuration de la
-raspberry, ou encore les deux?
+Pour Ansible, vaut-il mieux créer un script qui gere la configuration de l'instance Scaleway ou un script qui gere la configuration de la raspberry, ou encore les deux?
 
-Pour la raspberry, serait-il nécessaire d'avoir déja tout fini du cote
-du code intégré dessus, de sa configuration et des différents
-logiciels, librairies, packages a installer dessus nécessaires pour
-notre projet avant de pouvoir mettre cette configuration dans le code
-Ansible?
+Pour la raspberry, serait-il nécessaire d'avoir déja tout fini du cote du code intégré dessus, de sa configuration et des différents logiciels, librairies, packages a installer dessus nécessaires pour notre projet avant de pouvoir mettre cette configuration dans le code Ansible?
 
-Je ne suis pas sur d'avoir tout a fait compris les possibilités que
-nous amène Ansible en termes de ce qu'il faut avoir fini avant la
-configuration. Nous nous posions cette question par peur d'être
-limités sur le temps aue nous aurions a allouer a cette parie si elle
-requiert que tout le reste de notre projet soit fini ou presque.
-
+Je ne suis pas sur d'avoir tout a fait compris les possibilités que nous amène Ansible en termes de ce qu'il faut avoir fini avant la configuration.
+Nous nous posions cette question par peur d'être limités sur le temps aue nous aurions a allouer a cette parie si elle requiert que tout le reste de notre projet soit fini ou presque.
 
 ### API REST
-Nous avons pour but d'utiliser une API rest, mais hélas nous sommes un
-peu perdus. Nous avons d'un coté une raspberry Pi qui récupère et
-analyse des informations de différents capteurs(température, vidéo,
+
+Nous avons pour but d'utiliser une API rest, mais hélas nous sommes un peu perdus.
+Nous avons d'un coté une raspberry Pi qui récupère et analyse des informations de différents capteurs(température, vidéo,
 luminosité).
-De l'autre coté nous avons une application (android) qui récupère les
-informations et les affiche pour que l'utilisateur puisse suivre ces
-données.
+De l'autre coté nous avons une application (android) qui récupère les informations et les affiche pour que l'utilisateur puisse suivre ces données.
 
 >Nous étions partis en créant une API rest sur Android Studio mais
 >j'ai l'impression qu'il faudrait mieux commencer par configurer notre
@@ -52,7 +40,6 @@ données.
 
 ### Terraform et Packer
 
-Nous nous demandions aussi quelles seraient les utilisations
-possibles de terraform et packer au sein de notre projet. Seront-ils
-utiles seulement pour la définition de l'instance Scaleway?
+Nous nous demandions aussi quelles seraient les utilisations possibles de terraform et packer au sein de notre projet. 
+Seront-ils utiles seulement pour la définition de l'instance Scaleway?
 
