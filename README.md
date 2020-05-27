@@ -55,3 +55,4 @@ données.
 Nous nous demandions aussi quelles seraient les utilisations
 possibles de terraform et packer au sein de notre projet. Seront-ils
 utiles seulement pour la définition de l'instance Scaleway?
+
