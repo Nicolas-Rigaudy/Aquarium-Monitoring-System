@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/fish_bg.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp"
+    android:height="300dp"
+    android:viewportWidth="320"
+    android:viewportHeight="300"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M5 0H315C317.761 0 320 2.23858 320 5V295C320 297.761 317.761 300 315 300H5C2.23858 300 0 297.761 0 295V5C0 2.23858 2.23858 0 5 0Z"
+            />
+
+        <path
+            android:pathData="M0 0V300H320V0"
+            android:fillColor="#E6FCFDFF"
+            />
+
+    </group>
+
+</vector>

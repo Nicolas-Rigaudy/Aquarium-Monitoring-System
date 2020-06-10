@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/vector.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="23.33dp"
+    android:height="24.67dp"
+    android:viewportWidth="23.33"
+    android:viewportHeight="24.67"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M0 0H23.3333V24.6667H0V0Z"
+            />
+
+        <path
+            android:pathData="M0 0V24.6667H23.3333V0"
+            android:fillColor="#E2E2E8"
+            />
+
+    </group>
+
+</vector>

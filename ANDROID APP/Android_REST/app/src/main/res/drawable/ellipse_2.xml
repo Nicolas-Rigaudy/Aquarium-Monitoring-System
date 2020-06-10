@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/ellipse_2.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="201.01dp"
+    android:height="200dp"
+    android:viewportWidth="201.01"
+    android:viewportHeight="200"
+
+    >
+
+    <group>
+
+        <clip-path
+            android:background="@drawable/ellipse_fish_1"            />
+
+    </group>
+
+</vector>
