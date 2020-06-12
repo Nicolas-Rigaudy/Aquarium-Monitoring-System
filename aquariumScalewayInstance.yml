@@ -1,0 +1,63 @@
+- hosts: web
+
+tasks:
+    - name: Installs apache web server
+    apt:
+        pkg: apache2
+        state: present
+        update_cache: yes
+
+    - name: Installs mariadb server
+    apt:
+        pkg: mariadb-server
+        state: present
+        update_cache: yes
+
+    - name: Installs php 7.3
+    apt:
+        pkg: php7.3
+        state: present
+        update_cache: yes
+
+    - name: Installs php 7.3-mysql
+    apt:
+        pkg: php7.3-mysql
+        state: present
+        update_cache: yes
+
+    - name: Installs php-mbstring
+    apt:
+        pkg: php-mbstring
+        state: present
+        update_cache: yes
+
+    - name: Installs php-zip
+    apt:
+        pkg: php-zip
+        state: present
+        update_cache: yes
+
+    - name: Installs unzip
+    apt:
+        pkg: unzip
+        state: present
+        update_cache: yes
+
+    - name: Download phpMyAdmin
+    get_url:
+        url: https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
+        dest: /
+        mode: '0440'
+
+    - name: Unzip phpMyAdmin to /usr/share/phpmyadmin
+    unarchive:
+        src: phpMyAdmin-5.0.2-all-languages.zip
+        dest: /usr/share/phpmyadmin
+
+    - name: Create a temp directory for phpmyadmin and set www-data as owner
+    file:
+        path: /var/lib/phpmyadmin/tmp
+        state: directory
+        mode: '0755'
+        recurse: yes
+        owner: www-data:www-data
