@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/saltwater_t"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/saltwater_t"
-    android:clipToOutline="true">
+    android:background="@drawable/saltwater">
 
     <!-- photo-1559825481-12a05cc00344 2 -->
 
     <!-- Status bar -->
 
     <View
-        android:id="@+id/saltwater"
-        android:layout_width="412dp"
-        android:layout_height="730dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/saltwater"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <View
-        android:id="@+id/status_bar"
-        android:layout_width="405dp"
-        android:layout_height="88dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="#00000000"
-        app:layout_constraintBottom_toTopOf="@+id/saltwater"
-        app:layout_constraintEnd_toStartOf="@+id/saltwater"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <View
         android:id="@+id/rectangle_1"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="93dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -57,42 +28,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/aquarium_mo"
-        android:layout_width="306dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:fontFamily="@font/roboto_medium"
-        android:gravity="top"
-        android:text="@string/aquarium_mo"
-        android:textAppearance="@style/aquarium_mo"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/status_bar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/status_bar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517"
-        app:lineHeight="16sp" />
-
     <!-- Logo -->
 
     <!-- vs:profile -->
-
-    <View
-        android:id="@+id/ellipse_1"
-        android:layout_width="59dp"
-        android:layout_height="57dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/ellipse_1"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/status_bar"
-        app:layout_constraintEnd_toEndOf="@+id/status_bar"
-        app:layout_constraintStart_toEndOf="@+id/aquarium_mo"
-        app:layout_constraintTop_toTopOf="@+id/saltwater" />
 
     <!-- Fish -->
     <!-- Fish_BG -->
@@ -108,47 +46,138 @@
 
     <!-- Fish -->
 
-    <View
-        android:id="@+id/fish_bg"
-        android:layout_width="320dp"
-        android:layout_height="300dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/fish_bg"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/saltwater"
-        app:layout_constraintEnd_toEndOf="@+id/saltwater"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="@+id/saltwater"
-        app:layout_constraintTop_toBottomOf="@+id/status_bar"
-        app:layout_constraintVertical_bias="0.105" />
-
     <TextView
-        android:id="@+id/fish"
-        android:layout_width="45dp"
-        android:layout_height="38dp"
-        android:gravity="top"
-        android:text="@string/fish"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/ellipse_2"
-        app:layout_constraintEnd_toEndOf="@+id/fish_bg"
-        app:layout_constraintStart_toStartOf="@+id/fish_bg"
-        app:layout_constraintTop_toTopOf="@+id/fish_bg" />
-
-    <View
-        android:id="@+id/ellipse_2"
-        android:layout_width="201.01dp"
-        android:layout_height="200dp"
+        android:id="@+id/aquarium_mo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/ellipse_fish_1"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/saltwater"
-        app:layout_constraintEnd_toEndOf="@+id/saltwater"
-        app:layout_constraintStart_toStartOf="@+id/saltwater"
-        app:layout_constraintTop_toTopOf="@+id/saltwater"
-        app:layout_constraintVertical_bias="0.32999998" />
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="top"
+        android:text="@string/aquarium_mo"
+        android:textAppearance="@style/aquarium_mo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="16sp" />
 
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ellipse_1"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toEndOf="@+id/aquarium_mo"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Fish_Card_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/fish_bg"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:background="@drawable/fish_bg"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ellipse"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ellipse_fish_1"
+                app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
+                app:layout_constraintEnd_toEndOf="@+id/fish_bg"
+                app:layout_constraintStart_toStartOf="@+id/fish_bg"
+                app:layout_constraintTop_toTopOf="@+id/fish_bg" />
+
+            <TextView
+                android:id="@+id/fish"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="@string/fish"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/ellipse"
+                app:layout_constraintEnd_toEndOf="@+id/fish_bg"
+                app:layout_constraintStart_toStartOf="@+id/fish_bg"
+                app:layout_constraintTop_toTopOf="@+id/fish_bg" />
+
+            <TextView
+                android:id="@+id/species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/species"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
+                app:layout_constraintEnd_toEndOf="@+id/fish_bg"
+                app:layout_constraintStart_toStartOf="@+id/fish_bg"
+                app:layout_constraintTop_toBottomOf="@+id/ellipse" />
+
+            <ImageButton
+                android:id="@+id/imageButtonLeft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:rotation="180"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
+                app:layout_constraintEnd_toEndOf="@+id/fish_bg"
+                app:layout_constraintStart_toEndOf="@+id/ellipse"
+                app:layout_constraintTop_toTopOf="@+id/fish_bg"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <ImageButton
+                android:id="@+id/imageButtonRight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
+                app:layout_constraintEnd_toStartOf="@+id/ellipse"
+                app:layout_constraintStart_toStartOf="@+id/fish_bg"
+                app:layout_constraintTop_toTopOf="@+id/fish_bg"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

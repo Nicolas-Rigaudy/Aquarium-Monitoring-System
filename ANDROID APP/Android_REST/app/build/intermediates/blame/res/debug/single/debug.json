@@ -1,98 +1,290 @@
 [
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ellipse_2.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ellipse_2.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ellipse_1.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ellipse_1.xml"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_page.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_main_page.xml"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\layout\\activity_edit.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ellipse_1.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\fish_bg.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\menu\\menu_main.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ellipse_1.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\temp.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\temp.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\fish_bg.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_data_card.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\data_card.xml"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\temp.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ellipse_fish_1.jpg.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\ellipse_fish_1.jpg"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\rectangle_1.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\temp.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_fish_bg.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\fish_bg.xml"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\temp_bg.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\fish_bg.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\temp_bg.png"
     },
     {
-        "merged": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\corto\\AndroidStudioProjects\\Android_REST\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\rectangle_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\rectangle_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\temp_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\temp_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_temp_bg.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\temp_bg.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ellipse_2.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\temp.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\fish_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ellipse_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\rectangle_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_rectangle_1.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\rectangle_1.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\temp_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\rectangle_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ellipse_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_rectangle_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\rectangle_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_temp.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\temp.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_saltwater.jpg.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\saltwater.jpg"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_temp.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\temp.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ellipse_2.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\fish_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ellipse_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ellipse_1.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ellipse_1.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ellipse_2.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_fish_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\fish_bg.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_fish_card.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\fish_card.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\font_roboto_medium.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\font\\roboto_medium.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ellipse_2.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ellipse_2.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ellipse_2.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ellipse_2.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_temp_bg.png.flat",
+        "source": "D:\\Documents\\ESME\\Inge 2T\\Projet\\Aquarium Monitoring System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\temp_bg.png"
     }
 ]

@@ -56,6 +56,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -203,6 +207,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1375,6 +1383,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ellipse_1
+drawable ellipse_2
+drawable ellipse_fish_1
+drawable fish_bg
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1410,15 +1422,22 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rectangle_1
+drawable saltwater
+drawable selection_band_overlay
+drawable temp
+drawable temp_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto_medium
 id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
 id FirstFragment
+id Fish_Card_layout
 id META
 id SHIFT
 id SYM
@@ -1484,6 +1503,7 @@ id add
 id alertTitle
 id all
 id always
+id aquarium_mo
 id async
 id auto
 id barrier
@@ -1494,6 +1514,7 @@ id buttonPanel
 id button_cancel
 id button_ok
 id cancel_button
+id cardView
 id center
 id center_horizontal
 id center_vertical
@@ -1515,6 +1536,8 @@ id coordinator
 id custom
 id customPanel
 id cut
+id dataNameText
+id dataValueText
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1529,6 +1552,8 @@ id direct
 id disableHome
 id dropdown_menu
 id edit_query
+id ellipse
+id ellipse_1
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1542,6 +1567,8 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filter_chip
+id fish
+id fish_bg
 id fitToContents
 id fixed
 id forever
@@ -1558,6 +1585,8 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageButtonLeft
+id imageButtonRight
 id info
 id invisible
 id italic
@@ -1628,10 +1657,14 @@ id priceEditTxt
 id progress_circular
 id progress_horizontal
 id radio
+id rectangle_1
+id recyclerView
 id right
 id right_icon
 id right_side
 id rounded
+id saltwater
+id saltwater_t
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1666,6 +1699,7 @@ id snap
 id snapMargins
 id sort_view
 id spacer
+id species
 id split_action_bar
 id spread
 id spread_inside
@@ -1690,6 +1724,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temp
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
@@ -1795,7 +1830,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_edit
 layout activity_main
+layout activity_main_page
 layout custom_dialog
+layout data_card
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1811,6 +1848,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fish_card
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1903,6 +1941,7 @@ string abc_toolbar_collapse_description
 string action_settings
 string app_name
 string appbar_scrolling_view_behavior
+string aquarium_mo
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -1916,6 +1955,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string first_fragment_label
+string fish
 string hello_first_fragment
 string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
@@ -1966,6 +2006,7 @@ string previous
 string search_menu_title
 string second_fragment_label
 string sortable_indicator_content_description
+string species
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -2641,6 +2682,9 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style aquarium_mo
+style fish
+style species
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -2668,6 +2712,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

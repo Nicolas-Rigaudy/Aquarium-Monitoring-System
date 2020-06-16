@@ -41,4 +41,16 @@
 
     </style>
 
+    <style name="species">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #CC25323E
+        </item>
+
+    </style>
+
 </resources>

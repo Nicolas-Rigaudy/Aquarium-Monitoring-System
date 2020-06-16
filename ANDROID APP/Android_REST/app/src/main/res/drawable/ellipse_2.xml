@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- drawable/ellipse_2.xml -->
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="201.01dp"
+    android:width="200dp"
     android:height="200dp"
-    android:viewportWidth="201.01"
+    android:viewportWidth="200"
     android:viewportHeight="200"
-
     >
 
     <group>
 
         <clip-path
-            android:background="@drawable/ellipse_fish_1"            />
+            android:pathData="M201.005 100C201.005 155.228 156.009 200 100.503 200C44.9965 200 0 155.228 0 100C0 44.7715 44.9965 0 100.503 0C156.009 0 201.005 44.7715 201.005 100Z"
+            />
+
+        <path
+            android:pathData="M0 0V40H40V0"
+            android:fillColor="#AEAEAE"
+            />
 
     </group>
 
