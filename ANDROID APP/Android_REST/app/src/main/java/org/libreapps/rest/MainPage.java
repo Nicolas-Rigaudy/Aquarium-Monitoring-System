@@ -22,6 +22,10 @@ public class MainPage extends AppCompatActivity {
         ArrayList<DataCard> dataCards = new ArrayList<>();
         dataCards.add(new DataCard("Temperature","25°C"));
         dataCards.add(new DataCard("Brightness","Light ON"));
+        dataCards.add(new DataCard("Temperature","25°C"));
+        dataCards.add(new DataCard("Brightness","Light ON"));
+        dataCards.add(new DataCard("Temperature","25°C"));
+        dataCards.add(new DataCard("Brightness","Light ON"));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
