@@ -6,7 +6,7 @@ This program is used to detect movement of the fish
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture('fish_movement_test_2.mp4')                                                    #capture video from file
+cap = cv2.VideoCapture('fish_movement_test_3.mp4')                                                    #capture video from file
 
 #frame_width  = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH))                                               #set frame height and width to height and width of video
 #frame_height = int( cap.get( cv2.CAP_PROP_FRAME_HEIGHT))
