@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.libreapps.rest.obj.Product;
+import org.libreapps.rest.obj.Luminosite;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -108,14 +109,14 @@ public class ConnectionRest extends AsyncTask<String, Void, String> {
         return response.toString();
     }
 
-    public ArrayList<Product> parse(final String json) {
+    public ArrayList<Luminosite> parse(final String json) {
         try {
-            final ArrayList<Product> products = new ArrayList<>();
-            final JSONArray jProductArray = new JSONArray(json);
-            for (int i = 0; i < jProductArray.length(); i++) {
-                products.add(new Product(jProductArray.optJSONObject(i)));
+            final ArrayList<Luminosite> luminosites = new ArrayList<>();
+            final JSONArray jLuminositeArray = new JSONArray(json);
+            for (int i = 0; i < jLuminositeArray.length(); i++) {
+                luminosites.add(new Luminosite(jLuminositeArray.optJSONObject(i)));
             }
-            return products;
+            return luminosites;
         } catch (JSONException e) {
             Log.v("TAG","[JSONException] e : " + e.getMessage());
         }

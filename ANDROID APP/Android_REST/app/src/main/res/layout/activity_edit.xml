@@ -37,13 +37,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView_lbname"
+                android:id="@+id/textView_lbtimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name :" />
+                android:text="Timestamp :" />
 
             <EditText
-                android:id="@+id/nameEditTxt"
+                android:id="@+id/timestampEditTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -56,32 +56,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView_lbtype"
+                android:id="@+id/textView_lbluminosite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Type :" />
+                android:text="Luminosite :" />
 
             <EditText
-                android:id="@+id/typeEditTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView_lbprice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price :" />
-
-            <EditText
-                android:id="@+id/priceEditTxt"
+                android:id="@+id/luminositeEditTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"

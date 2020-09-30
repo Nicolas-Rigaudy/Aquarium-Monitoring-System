@@ -9,18 +9,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class EditActivity extends AppCompatActivity implements View.OnClickListener{
 
     private int id = 0;
-    private String name = "";
-    private String type = "";
-    private double price = 0.0;
-    private EditText nameEditText;
-    private EditText typeEditText;
-    private EditText priceEditText;
+    //private String name = "";
+   // private String type = "";
+    //private double price = 0.0;
+    private String timestamp = "";
+    private int luminosite = 100;
+    //private EditText nameEditText;
+    //private EditText typeEditText;
+    //private EditText priceEditText;
+    private EditText timestampEditText;
+    private EditText luminositeEditText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +34,18 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView idText = findViewById(R.id.textView_id);
 
-        nameEditText = findViewById(R.id.nameEditTxt);
+        /*nameEditText = findViewById(R.id.nameEditTxt);
         String nameEditTextValue = nameEditText.getText().toString();
         typeEditText = findViewById(R.id.typeEditTxt);
         String typeEditTextValue = typeEditText.getText().toString();
         priceEditText = findViewById(R.id.priceEditTxt);
-        String priceEditTextValue = priceEditText.getText().toString();
+        String priceEditTextValue = priceEditText.getText().toString();*/
+        timestampEditText = findViewById(R.id.timestampEditTxt);
+        String timestampEditTextValue = timestampEditText.getText().toString();
+        luminositeEditText = findViewById(R.id.luminositeEditTxt);
+        String luminositeEditTextValue = luminositeEditText.getText().toString();
+
+
 
         Button button_ok= findViewById(R.id.button_ok);
         button_ok.setOnClickListener(this);
@@ -41,15 +53,19 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         button_cancel.setOnClickListener(this);
 
         id = getIntent().getIntExtra("id",0);
-        name = getIntent().getStringExtra("name");
+        /*name = getIntent().getStringExtra("name");
         type = getIntent().getStringExtra("type");
-        price = getIntent().getDoubleExtra("price", 0.0);
+        price = getIntent().getDoubleExtra("price", 0.0);*/
+        timestamp = getIntent().getStringExtra("timestamp");
+        luminosite = getIntent().getIntExtra("luminosite", 0);
 
         if(id!=0){
             idText.setText(""+id);
-            nameEditText.setText(name);
+            /*nameEditText.setText(name);
             typeEditText.setText(type);
-            priceEditText.setText(""+price);
+            priceEditText.setText(""+price);*/
+            timestampEditText.setText(timestamp);
+            luminositeEditText.setText(luminosite);
             button_cancel.setText("Supprimer");
             button_ok.setText("Modifier");
         }
@@ -64,9 +80,9 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                     if(id!=0) {
                         product.put("id", id);
                     }
-                    product.put("name", nameEditText.getText().toString());
-                    product.put("type", typeEditText.getText().toString());
-                    product.put("price", Double.parseDouble(priceEditText.getText().toString()));
+                    product.put("timestamp", timestampEditText.getText().toString());
+                    product.put("luminosite", Integer.parseInt(luminositeEditText.getText().toString()));
+                    //product.put("price", Double.parseDouble(priceEditText.getText().toString()));
                     connectionRest.setJsonObj(product);
                     if(id!=0) { // Modification
                         connectionRest.execute("PUT");

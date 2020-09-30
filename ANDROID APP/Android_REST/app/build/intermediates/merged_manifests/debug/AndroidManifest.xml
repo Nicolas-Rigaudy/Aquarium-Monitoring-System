@@ -24,7 +24,7 @@
         android:usesCleartextTraffic="true" >
         <activity android:name="org.libreapps.rest.EditActivity" />
         <activity
-            android:name="org.libreapps.rest.MainPage"
+            android:name="org.libreapps.rest.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

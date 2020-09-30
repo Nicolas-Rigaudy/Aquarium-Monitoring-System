@@ -19,8 +19,10 @@ import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    ProductTableModel tableModel;
+    LuminositeTableModel tableModel;
     TableView<String[]> tableView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +30,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //new ConnectionRest().execute("GET");
 
-        tableModel = new ProductTableModel();
+        tableModel = new LuminositeTableModel();
         tableView = (TableView<String[]>) findViewById(R.id.tableView);
-        tableView.setDataAdapter(new SimpleTableDataAdapter(this, tableModel.getProducts()));
-        tableView.setHeaderAdapter(new SimpleTableHeaderAdapter(this, tableModel.getProductHeaders()));
+        tableView.setDataAdapter(new SimpleTableDataAdapter(this, tableModel.getLuminosites()));
+        tableView.setHeaderAdapter(new SimpleTableHeaderAdapter(this, tableModel.getLuminositeHeaders()));
 
         //TABLE CLICK
         tableView.addDataClickListener(new TableDataClickListener() {
             public void onDataClicked(int rowIndex, Object clickedData) {
                 Intent intent = new Intent(MainActivity.this, EditActivity.class);
                 intent.putExtra("id", tableModel.get(rowIndex).getId());
-                intent.putExtra("name", ((String[])clickedData)[1]);
-                intent.putExtra("type", ((String[])clickedData)[2]);
-                intent.putExtra("price", Double.parseDouble(((String[]) clickedData)[3]));
+                intent.putExtra("timestamp", ((String[])clickedData)[1]);
+                intent.putExtra("luminosite", Integer.parseInt(((String[]) clickedData)[2]));
                 startActivity(intent);
             }
         });

@@ -1598,6 +1598,7 @@ id line1
 id line3
 id listMode
 id list_item
+id luminositeEditTxt
 id masked
 id message
 id middle
@@ -1629,7 +1630,6 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id nameEditTxt
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
@@ -1653,7 +1653,6 @@ id password_toggle
 id peekHeight
 id percent
 id pin
-id priceEditTxt
 id progress_circular
 id progress_horizontal
 id radio
@@ -1735,15 +1734,15 @@ id textSpacerNoTitle
 id textStart
 id textView_id
 id textView_lbid
-id textView_lbname
-id textView_lbprice
-id textView_lbtype
+id textView_lbluminosite
+id textView_lbtimestamp
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timestampEditTxt
 id title
 id titleDividerNoCustom
 id title_template
@@ -1755,7 +1754,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id typeEditTxt
 id unchecked
 id uniform
 id unlabeled
