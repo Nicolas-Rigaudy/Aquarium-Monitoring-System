@@ -8,6 +8,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.libreapps.rest.obj.Product;
 import org.libreapps.rest.obj.Luminosite;
+import org.libreapps.rest.obj.Temperature;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,9 +24,12 @@ import java.util.List;
 
 public class ConnectionRest extends AsyncTask<String, Void, String> {
     //private final static String URL = "http://api.munier.me/gr12/product/";
-    private final static String URL = "http://e243fd77-76ac-422a-b430-369e1542d528.pub.cloud.scaleway.com/product/";
+    private static String URL = null;
     private JSONObject jsonObj = null;
 
+    public ConnectionRest(final String url){
+        this.URL = url;
+    }
     @Override
     protected String doInBackground(String... strings) {
         try {
@@ -109,7 +113,7 @@ public class ConnectionRest extends AsyncTask<String, Void, String> {
         return response.toString();
     }
 
-    public ArrayList<Luminosite> parse(final String json) {
+    public ArrayList<Luminosite> parseluminosite(final String json) {
         try {
             final ArrayList<Luminosite> luminosites = new ArrayList<>();
             final JSONArray jLuminositeArray = new JSONArray(json);
@@ -117,6 +121,19 @@ public class ConnectionRest extends AsyncTask<String, Void, String> {
                 luminosites.add(new Luminosite(jLuminositeArray.optJSONObject(i)));
             }
             return luminosites;
+        } catch (JSONException e) {
+            Log.v("TAG","[JSONException] e : " + e.getMessage());
+        }
+        return null;
+    }
+    public ArrayList<Temperature> parsetemperature(final String json) {
+        try {
+            final ArrayList<Temperature> temperatures = new ArrayList<>();
+            final JSONArray jTemperatureArray = new JSONArray(json);
+            for (int i = 0; i < jTemperatureArray.length(); i++) {
+                temperatures.add(new Temperature(jTemperatureArray.optJSONObject(i)));
+            }
+            return temperatures;
         } catch (JSONException e) {
             Log.v("TAG","[JSONException] e : " + e.getMessage());
         }

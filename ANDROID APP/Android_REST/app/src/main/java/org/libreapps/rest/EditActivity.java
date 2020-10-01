@@ -75,7 +75,8 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.button_ok:
                 try {
-                    ConnectionRest connectionRest = new ConnectionRest();
+                    String url = "http://e243fd77-76ac-422a-b430-369e1542d528.pub.instances.scw.cloud/luminosite/";
+                    ConnectionRest connectionRest = new ConnectionRest(url);
                     JSONObject product = new JSONObject();
                     if(id!=0) {
                         product.put("id", id);
@@ -97,7 +98,8 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_cancel:
                 if(id!=0){ // Suppression
                     try {
-                        ConnectionRest connectionRest = new ConnectionRest();
+                        String url = "http://e243fd77-76ac-422a-b430-369e1542d528.pub.instances.scw.cloud/luminosite/";
+                        ConnectionRest connectionRest = new ConnectionRest(url);
                         JSONObject product = new JSONObject();
                         product.put("id", id);
                         connectionRest.setJsonObj(product);

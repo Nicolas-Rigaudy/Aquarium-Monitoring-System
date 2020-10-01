@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import org.libreapps.rest.obj.Temperature;
+
 import de.codecrafters.tableview.TableView;
 import de.codecrafters.tableview.listeners.TableDataClickListener;
 import de.codecrafters.tableview.toolkit.SimpleTableDataAdapter;
@@ -19,7 +21,9 @@ import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    LuminositeTableModel tableModel;
+    LuminositeTableModel tableModel1;
+    TemperatureTableModel tableModel2;
+
     TableView<String[]> tableView;
 
 
@@ -30,18 +34,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //new ConnectionRest().execute("GET");
 
-        tableModel = new LuminositeTableModel();
+        tableModel1 = new LuminositeTableModel();
+        tableModel2 = new TemperatureTableModel();
         tableView = (TableView<String[]>) findViewById(R.id.tableView);
-        tableView.setDataAdapter(new SimpleTableDataAdapter(this, tableModel.getLuminosites()));
-        tableView.setHeaderAdapter(new SimpleTableHeaderAdapter(this, tableModel.getLuminositeHeaders()));
+        tableView.setDataAdapter(new SimpleTableDataAdapter(this, tableModel1.getLuminosites()));
+        tableView.setHeaderAdapter(new SimpleTableHeaderAdapter(this, tableModel1.getLuminositeHeaders()));
+        tableView.setDataAdapter(new SimpleTableDataAdapter(this, tableModel2.getTemperatures()));
+        tableView.setHeaderAdapter(new SimpleTableHeaderAdapter(this, tableModel2.getTemperatureHeaders()));
 
         //TABLE CLICK
         tableView.addDataClickListener(new TableDataClickListener() {
             public void onDataClicked(int rowIndex, Object clickedData) {
                 Intent intent = new Intent(MainActivity.this, EditActivity.class);
-                intent.putExtra("id", tableModel.get(rowIndex).getId());
+                intent.putExtra("id", tableModel1.get(rowIndex).getId());
                 intent.putExtra("timestamp", ((String[])clickedData)[1]);
                 intent.putExtra("luminosite", Integer.parseInt(((String[]) clickedData)[2]));
+                intent.putExtra("id", tableModel2.get(rowIndex).getId());
+                intent.putExtra("timestamp", ((String[])clickedData)[1]);
+                intent.putExtra("temperature", Integer.parseInt(((String[]) clickedData)[2]));
                 startActivity(intent);
             }
         });

@@ -87,7 +87,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\co
 	android:roundIcon
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:10:9-39
 	android:allowBackup
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
@@ -98,14 +98,14 @@ activity#org.libreapps.rest.EditActivity
 ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:16:9-50
 	android:name
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:16:19-47
-activity#org.libreapps.rest.MainActivity
+activity#org.libreapps.rest.MainPage
 ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:label
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:19:13-45
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:19:13-37
 	android:theme
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:20:13-56
 	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:18:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN

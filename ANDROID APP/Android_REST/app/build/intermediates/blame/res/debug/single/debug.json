@@ -1,23 +1,23 @@
 [
     {
-        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ellipse_1.png.flat",
-        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ellipse_1.png"
-    },
-    {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ellipse_1.png.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ellipse_1.png"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ellipse_2.png.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ellipse_2.png"
     },
     {
-        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_rectangle_1.png.flat",
@@ -36,12 +36,12 @@
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\ellipse_fish_1.jpg"
     },
     {
-        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_rectangle_1.png.flat",
@@ -56,16 +56,16 @@
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\saltwater.jpg"
     },
     {
-        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_temp_bg.png.flat",
-        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\temp_bg.png"
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_data_card.xml.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\data_card.xml"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit.xml.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\activity_edit.xml"
     },
     {
-        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\layout_data_card.xml.flat",
-        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\layout\\data_card.xml"
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_temp_bg.png.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\temp_bg.png"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_fish_bg.png.flat",
@@ -126,6 +126,10 @@
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ellipse_2.xml.flat",
         "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ellipse_2.xml"
+    },
+    {
+        "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo1.png.flat",
+        "source": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\src\\main\\res\\drawable-v24\\logo1.png"
     },
     {
         "merged": "C:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_fish_bg.png.flat",
