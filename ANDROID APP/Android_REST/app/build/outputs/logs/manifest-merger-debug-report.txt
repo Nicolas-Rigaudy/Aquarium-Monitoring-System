@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\f262923402dad6cf015f35bad166cdee\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\ae67d481176994a76afa6f312b4e8a78\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [de.codecrafters.tableview:tableview:2.2.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\8aca4a91c288bee6524ca9599abb07a5\jetified-tableview-2.2.0\AndroidManifest.xml:2:1-13:12
@@ -39,20 +39,20 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\corto\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\9c0d2720907bb8bd5d5976efee735314\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\611defeaf3d473aab6bc20e630bc7748\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\8ea89f1ba139367cf0715440c9a44f1a\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:2:11-69
@@ -65,7 +65,7 @@ ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src
 	android:name
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:8:5-31:19
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:8:5-36:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\ae67d481176994a76afa6f312b4e8a78\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\ae67d481176994a76afa6f312b4e8a78\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [de.codecrafters.tableview:tableview:2.2.0] C:\Users\corto\.gradle\caches\transforms-2\files-2.1\8aca4a91c288bee6524ca9599abb07a5\jetified-tableview-2.2.0\AndroidManifest.xml:11:5-53
@@ -94,34 +94,46 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\co
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:14:9-40
 	android:usesCleartextTraffic
 		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:15:9-44
-activity#org.libreapps.rest.EditActivity
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:16:9-50
-	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:16:19-47
-activity#org.libreapps.rest.MainPage
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:17:9-26:20
+activity#org.libreapps.rest.Info_Fish_Activity
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:16:9-19:68
 	android:label
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:19:13-37
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:18:13-63
 	android:theme
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:20:13-56
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:18:13-37
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:17:13-47
+activity#org.libreapps.rest.TemperatureTableActivity
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:20:9-62
+	android:name
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:20:19-59
+activity#org.libreapps.rest.LuminositeTableActivity
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:21:9-61
+	android:name
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:21:19-58
+activity#org.libreapps.rest.MainPage
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:22:9-31:20
+	android:label
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:24:13-37
+	android:theme
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:23:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:29:27-74
 meta-data#preloaded_fonts
-ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:28:9-30:57
+ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:33:9-35:57
 	android:resource
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:30:13-54
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:35:13-54
 	android:name
-		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:29:13-43
+		ADDED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml:34:13-43
 uses-sdk
 INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\python\Aquarium-Monitoring-System\ANDROID APP\Android_REST\app\src\main\AndroidManifest.xml

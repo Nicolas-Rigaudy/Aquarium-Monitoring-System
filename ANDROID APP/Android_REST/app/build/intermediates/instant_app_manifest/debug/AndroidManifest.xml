@@ -23,7 +23,12 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="org.libreapps.rest.EditActivity" />
+        <activity
+            android:name="org.libreapps.rest.Info_Fish_Activity"
+            android:label="@string/title_activity_info__fish_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="org.libreapps.rest.TemperatureTableActivity" />
+        <activity android:name="org.libreapps.rest.LuminositeTableActivity" />
         <activity
             android:name="org.libreapps.rest.MainPage"
             android:label="HCFF_APP"

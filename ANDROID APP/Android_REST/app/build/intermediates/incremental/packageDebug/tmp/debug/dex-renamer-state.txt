@@ -1,4 +1,4 @@
-#Thu Oct 01 12:49:46 CEST 2020
+#Fri Oct 02 00:06:38 CEST 2020
 base.0=C\:\\python\\Aquarium-Monitoring-System\\ANDROID APP\\Android_REST\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

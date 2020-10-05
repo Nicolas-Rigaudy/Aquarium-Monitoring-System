@@ -90,7 +90,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                     }else{ // Creation
                         connectionRest.execute("POST");
                     }
-                    Intent intent = new Intent(EditActivity.this, MainActivity.class);
+                    Intent intent = new Intent(EditActivity.this, TemperatureTableActivity.class);
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -108,7 +108,7 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
                         e.printStackTrace();
                     }
                 }
-                Intent intent = new Intent(EditActivity.this, MainActivity.class);
+                Intent intent = new Intent(EditActivity.this, TemperatureTableActivity.class);
                 startActivity(intent);
         }
     }

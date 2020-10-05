@@ -32,7 +32,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/ellipse"
+            android:id="@+id/fishImage"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:src="@drawable/ellipse_fish_1"
@@ -48,7 +48,7 @@
             android:text="@string/fish"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#000000"
-            app:layout_constraintBottom_toTopOf="@+id/ellipse"
+            app:layout_constraintBottom_toTopOf="@+id/fishImage"
             app:layout_constraintEnd_toEndOf="@+id/fish_bg"
             app:layout_constraintStart_toStartOf="@+id/fish_bg"
             app:layout_constraintTop_toTopOf="@+id/fish_bg" />
@@ -64,27 +64,27 @@
             app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
             app:layout_constraintEnd_toEndOf="@+id/fish_bg"
             app:layout_constraintStart_toStartOf="@+id/fish_bg"
-            app:layout_constraintTop_toBottomOf="@+id/ellipse" />
+            app:layout_constraintTop_toBottomOf="@+id/fishImage" />
 
         <ImageButton
-            android:id="@+id/imageButtonLeft"
+            android:id="@+id/imageButtonRight"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:rotation="180"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
             app:layout_constraintEnd_toEndOf="@+id/fish_bg"
-            app:layout_constraintStart_toEndOf="@+id/ellipse"
+            app:layout_constraintStart_toEndOf="@+id/fishImage"
             app:layout_constraintTop_toTopOf="@+id/fish_bg"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
         <ImageButton
-            android:id="@+id/imageButtonRight"
+            android:id="@+id/imageButtonLeft"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
-            app:layout_constraintEnd_toStartOf="@+id/ellipse"
+            app:layout_constraintEnd_toStartOf="@+id/fishImage"
             app:layout_constraintStart_toStartOf="@+id/fish_bg"
             app:layout_constraintTop_toTopOf="@+id/fish_bg"
             app:srcCompat="?attr/actionModeCloseDrawable" />

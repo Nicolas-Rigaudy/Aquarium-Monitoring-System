@@ -65,8 +65,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lineHeight="16sp" />
 
-    <View
-        android:id="@+id/ellipse_1"
+    <ImageView
+        android:id="@+id/refreshIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:tint="#ED000000"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/refreshButton"
+        app:layout_constraintEnd_toEndOf="@+id/refreshButton"
+        app:layout_constraintStart_toStartOf="@+id/refreshButton"
+        app:layout_constraintTop_toTopOf="@+id/refreshButton"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+    <Button
+        android:id="@+id/refreshButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
@@ -76,7 +94,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
         app:layout_constraintStart_toEndOf="@+id/aquarium_mo"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.cardview.widget.CardView
@@ -110,7 +128,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ellipse"
+                android:id="@+id/fishImage"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/ellipse_fish_1"
@@ -126,7 +144,7 @@
                 android:text="@string/fish"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/ellipse"
+                app:layout_constraintBottom_toTopOf="@+id/fishImage"
                 app:layout_constraintEnd_toEndOf="@+id/fish_bg"
                 app:layout_constraintStart_toStartOf="@+id/fish_bg"
                 app:layout_constraintTop_toTopOf="@+id/fish_bg" />
@@ -142,30 +160,40 @@
                 app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
                 app:layout_constraintEnd_toEndOf="@+id/fish_bg"
                 app:layout_constraintStart_toStartOf="@+id/fish_bg"
-                app:layout_constraintTop_toBottomOf="@+id/ellipse" />
+                app:layout_constraintTop_toBottomOf="@+id/fishImage" />
 
             <ImageButton
-                android:id="@+id/imageButtonLeft"
+                android:id="@+id/imageButtonRight"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:rotation="180"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
                 app:layout_constraintEnd_toEndOf="@+id/fish_bg"
-                app:layout_constraintStart_toEndOf="@+id/ellipse"
+                app:layout_constraintStart_toEndOf="@+id/fishImage"
                 app:layout_constraintTop_toTopOf="@+id/fish_bg"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <ImageButton
-                android:id="@+id/imageButtonRight"
+                android:id="@+id/imageButtonLeft"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
-                app:layout_constraintEnd_toStartOf="@+id/ellipse"
+                app:layout_constraintEnd_toStartOf="@+id/fishImage"
                 app:layout_constraintStart_toStartOf="@+id/fish_bg"
                 app:layout_constraintTop_toTopOf="@+id/fish_bg"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <Button
+                android:id="@+id/infoButton"
+                android:layout_width="144dp"
+                android:layout_height="287dp"
+                android:alpha="0"
+                app:layout_constraintBottom_toBottomOf="@+id/fish_bg"
+                app:layout_constraintEnd_toEndOf="@+id/fishImage"
+                app:layout_constraintStart_toStartOf="@+id/fishImage"
+                app:layout_constraintTop_toTopOf="@+id/fish_bg" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".EditActivity" />
+        <activity
+            android:name=".Info_Fish_Activity"
+            android:label="@string/title_activity_info__fish_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TemperatureTableActivity" />
+        <activity android:name=".LuminositeTableActivity" />
         <activity
             android:name=".MainPage"
             android:label="HCFF_APP"
