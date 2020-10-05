@@ -11,4 +11,3 @@ class Sensor:
 
     def sendData(self):
         pass
-        

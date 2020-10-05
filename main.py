@@ -13,7 +13,6 @@ def main():
     sensorlist.append(brightnessSensor)
 
     for sensor in sensorlist:
-        #TODO loop every minute
         sensor.getData()
         sensor.sendData()
 

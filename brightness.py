@@ -12,22 +12,22 @@ class Brightness(Sensor):
 
     def getData(self):
         GPIO.setmode(GPIO.BCM)
-        GPIO.setwarnings(False)                                 
+        GPIO.setwarnings(False)
         self.LIGHT_PIN = 23
-        GPIO.setup(self.LIGHT_PIN, GPIO.IN)                          
-        self.lOld = not GPIO.input(self.LIGHT_PIN)                        
+        GPIO.setup(self.LIGHT_PIN, GPIO.IN)
+        self.lOld = not GPIO.input(self.LIGHT_PIN)
 
         print("Debut du module de capteur de luminosite")
-        time.sleep(0.5)     
+        time.sleep(0.5)
 
-        if GPIO.input(self.LIGHT_PIN) != self.lOld:   
-            if GPIO.input(self.LIGHT_PIN):                           
+        if GPIO.input(self.LIGHT_PIN) != self.lOld:
+            if GPIO.input(self.LIGHT_PIN):
                 print ("c'est eteint !")
                 self.data = 0
-            else:                                               
+            else:
                 print ("c'est allume !")
                 self.data = 100
-            self.lOld = GPIO.input(self.LIGHT_PIN)                        
+            self.lOld = GPIO.input(self.LIGHT_PIN)
 
     def sendData(self):
         self.url = "http://163.172.166.95/luminosite/"
@@ -37,12 +37,3 @@ class Brightness(Sensor):
         self.r = requests.post(self.url, data = self.brightnessData)
         self.response = self.r.text
         print(self.response)
-        #print(self.brightnessData)
-
-
-
-
-
-
-
-

@@ -24,7 +24,7 @@ class Temperature(Sensor):
         return self.temperature
 
     def getData(self):
-        
+
         self.contenuFich1 = self.lireFichier("/sys/bus/w1/devices/28-011453f479aa/w1_slave")
         self.contenuFich2 = self.lireFichier("/sys/bus/w1/devices/28-01145e82fa41/w1_slave")
 
@@ -33,7 +33,7 @@ class Temperature(Sensor):
 
         print ("Temperature Capteur #1 : ", self.temperature1)
         print ("Temperature Capteur #2 : ", self.temperature2)
-        
+
         self.tempDiff = self.temperature2 - self.temperature1
 
         if self.tempDiff < 10.0 and self.tempDiff > -10.0:
@@ -52,7 +52,6 @@ class Temperature(Sensor):
         self.r = requests.post(self.url, data = self.tempData)
         self.response = self.r.text
         print(self.response)
-        #print(self.temperatureData)
 
 
 
