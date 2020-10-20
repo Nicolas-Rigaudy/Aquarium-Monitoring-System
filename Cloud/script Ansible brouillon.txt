@@ -27,3 +27,17 @@ mkdir product
 cd product
 nano .htaccess
 nano index.php
+cp -R product/ temperature
+cp -R product/ luminosite
+nano test.php //pas obliger
+apt install php-json
+service apache2 restart
+apt install memcached
+reboot
+apt-get install libfcgi-dev libfcgi0ldbl libjpeg62-turbo-dbg libmcrypt-dev libssl-dev libc-client2007e libc-client2007e-dev libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpng12-dev libfreetype6-dev libkrb5-dev libpq-dev libxml2-dev libxslt1-dev
+apt -y install php-cli php-fpm php-json php-pdo php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath
+reboot
+wget https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip
+unzip packer_0.8.6_linux_amd64.zip -d /usr/local/bin/packer
+echo "PATH=$PATH:/usr/local/bin/packer" >> .bashrc && exec bash
+packer build my-template.json
