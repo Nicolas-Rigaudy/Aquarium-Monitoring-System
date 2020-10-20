@@ -1,0 +1,29 @@
+apt-get install apache2 mariadb-server
+apt update
+apt-get install apache2 mariadb-server
+apt-get install php7.3 php7.3-mysql
+apt update
+apt-get install php-mbstring php-zip php-gd
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
+apt install unzip
+unzip phpMyAdmin-5.0.2-all-languages.zip
+mv phpMyAdmin-5.0.2-all-languages/ /usr/share/phpmyadmin
+mkdir -p /var/lib/phpmyadmin/tmp
+chown -R www-data:www-data /var/lib/phpmyadmin
+cp /usr/share/phpmyadmin/config.sample.inc.php /usr/share/phpmyadmin/config.inc.php
+apt install pwgen
+pwgen -s 32 1
+nano /usr/share/phpmyadmin/config.inc.php
+mariadb < /usr/share/phpmyadmin/sql/create_tables.sql
+mariadb
+GRANT SELECT, INSERT, UPDATE, DELETE ON phpmyadmin.* TO 'pma'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+exit
+nano /etc/apache2/conf-available/phpmyadmin.conf
+a2enconf phpmyadmin.conf
+systemctl reload apache2
+cd /var/www/html
+mkdir product
+cd product
+nano .htaccess
+nano index.php
