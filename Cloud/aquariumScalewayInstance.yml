@@ -61,3 +61,168 @@ tasks:
         mode: '0755'
         recurse: yes
         owner: www-data:www-data
+
+    - name: Copying file with owner and permission
+    copy:
+        src: /usr/share/phpmyadmin/config.sample.inc.php
+        dest: /usr/share/phpmyadmin/config.inc.php
+        owner:
+        group:
+        mode: '0644'
+
+    - name: Installs pwgen
+    apt:
+        pkg: pwgen
+        state: present
+        update_cache: yes
+
+    - name: Create a mysql user with an 32 character random password 
+    mysql_user:
+        name: "{{ client }}"
+        password: "{{ lookup('password', 'credentials/' + client + '/'
+        + tier + '/' + role + '/mysqlpassword length=32') }}"
+        priv: "{{ client }}_{{ tier }}_{{ role }}.*:ALL"
+
+    - name: Enable the Apache2 module
+
+    - name: Go to the folder and execute command
+    command: chdir=/var/www/html ls
+
+    - name: Create a directory
+    file:
+        path: /var/www/html/product
+        state: directory
+        mode: '0755'
+
+    - name: Go to the folder and execute command
+     command: chdir=/var/www/html/product ls
+
+    - name: create files
+    - name: copying directory
+
+    - name: Installs php-json
+    apt:
+        pkg: php-json
+        state: present
+        update_cache: yes
+
+
+    - name: Installs memcached
+    apt:
+        pkg: memcached
+        state: present
+        update_cache: yes
+
+    - name: Unzip packer to /usr/local/bin/packer
+    unarchive:
+        src: packer_0.8.6_linux_amd64.zip
+        dest: /usr/local/bin/packer
+
+        - name: Install Utility software
+      apt: name={{item}} state=latest update_cache=yes
+      with_items:
+        - software-properties-common
+        - python-mysqldb
+
+    - name: Install MariaDB Packages
+    apt: name={{item}} state=installed default_release=trusty
+    update_cache=yes
+    with_items:
+        - mariadb-client
+        - mariadb-common
+        - mariadb-server
+
+    - name: Create MariaDB Directories
+    file: path=/data/{{item}} state=directory owner=mysql group=mysql
+    recurse=yes
+    with_items:
+        - db
+        - log
+
+    - name: Write new configuration file
+    template:
+        src: /home/vagrant/ansible/templates/mysql/my.cnf
+        dest: /etc/mysql/my.cnf
+        owner: mysql
+        group: mysql
+        mode: '0600'
+        backup: yes
+
+    - name: Count files in /data/db
+    find: path=/data/db patterns='*'
+    register: db_files
+
+    - name: Run mysql_install_db only if /data/db is empty
+    command: mysql_install_db --datadir=/data/db
+    when: db_files.matched|int == 0
+
+    - name: Start MariaDB
+    service: name=mysql state=started
+
+    - name: Is root password set?
+    command: mysql -u root --execute "SELECT NOW()"
+    register: is_root_password_set
+    ignore_errors: yes
+
+    - name: Delete anonymous users
+    mysql_user: user="" state="absent"
+    when: is_root_password_set.rc == 0
+
+    - name: Generate mysql root password
+    shell: tr -d -c "a-zA-Z0-9" < /dev/urandom | head -c 10
+    register: mysql_root_password
+    when: is_root_password_set.rc == 0
+
+    - name: Set root password
+    mysql_user: user=root password="{{mysql_root_password.stdout}}"
+    host=localhost
+    when: is_root_password_set.rc == 0
+
+    - name: Set root password for other hosts
+    mysql_user: user=root password="{{mysql_root_password.stdout}}"
+    host="{{item}}" login_user="root" login_host="localhost"
+    login_password="{{mysql_root_password.stdout}}"
+    when: is_root_password_set.rc == 0
+    with_items:
+        - "127.0.0.1"
+        - "::1"
+
+    - name: Inform user of mysql root password
+    debug:
+        msg: "MariaDB root password was set to
+        {{mysql_root_password.stdout}}"
+    when: is_root_password_set.rc == 0
+
+    - name: Create temperature database
+    mysql_db:
+        name: temperature
+        login_user: root
+        login_password: "{{mysql_root_password.stdout}}"
+        login_host: localhost
+        state: present
+    when: is_root_password_set.rc == 0
+
+    - name: Create brightness database
+    mysql_db:
+        name: brightness
+        login_user: root
+        login_password: "{{mysql_root_password.stdout}}"
+        login_host: localhost
+        state: present
+    when: is_root_password_set.rc == 0
+
+    - name: Generate aquarium_monitor password
+    shell: tr -d -c "a-zA-Z0-9" < /dev/urandom | head -c 10
+    register: mysql_aquarium_monitor_password
+    when: is_root_password_set.rc == 0
+
+    - name: Create user for sensor databases
+    mysql_user:
+        name: aquarium_monitor
+        password: "{{mysql_aquarium_monitor_password}}"
+        priv: temperature.*:SELECT,INSERT,UPDATE,DELETE
+		priv: brightness.*:SELECT,INSERT,UPDATE,DELETE
+        login_user: root
+        login_password: "{{mysql_root_password.stdout}}"
+        state: present
+    when: is_root_password_set.rc == 0
