@@ -1,0 +1,148 @@
+- hosts: web
+
+tasks:
+    - name: Installs apache web server
+    apt:
+        pkg: apache2
+        state: present
+        update_cache: yes
+
+    - name: Installs mariadb server
+    apt:
+        pkg: mariadb-server
+        state: present
+        update_cache: yes
+
+    - name: Installs php 7.3
+    apt:
+        pkg: php7.3
+        state: present
+        update_cache: yes
+
+    - name: Installs php 7.3-mysql
+    apt:
+        pkg: php7.3-mysql
+        state: present
+        update_cache: yes
+
+    - name: Installs php-mbstring
+    apt:
+        pkg: php-mbstring
+        state: present
+        update_cache: yes
+
+    - name: Installs php-zip
+    apt:
+        pkg: php-zip
+        state: present
+        update_cache: yes
+
+    - name: Installs unzip
+    apt:
+        pkg: unzip
+        state: present
+        update_cache: yes
+
+    - name: Download phpMyAdmin
+    get_url:
+        url: https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
+        dest: /
+        mode: '0440'
+
+    - name: Unzip phpMyAdmin to /usr/share/phpmyadmin
+    unarchive:
+        src: phpMyAdmin-5.0.2-all-languages.zip
+        dest: /usr/share/phpmyadmin
+
+    - name: Create a temp directory for phpmyadmin and set www-data as owner
+    file:
+        path: /var/lib/phpmyadmin/tmp
+        state: directory
+        mode: '0755'
+        recurse: yes
+        owner: www-data:www-data
+
+	
+
+
+
+
+    - name: Copying file with owner and permission
+      copy:
+	src: /usr/share/phpmyadmin/config.sample.inc.php
+	dest: /usr/share/phpmyadmin/config.inc.php
+	owner:
+	group:
+	mode: '0644'
+
+
+    - name: Installs pwgen
+      apt:
+        pkg: pwgen
+        state: present
+        update_cache: yes
+
+    - name: Create a mysql user with an 32 character random password 
+      mysql_user:
+	name: "{{ client }}"
+	password: "{{ lookup('password', 'credentials/' + client + '/' + tier + '/' + role + '/mysqlpassword length=32') }}"
+   	priv: "{{ client }}_{{ tier }}_{{ role }}.*:ALL"
+
+
+
+
+
+
+
+
+    - name: Enable the Apache2 module
+
+	state:
+	name:
+
+
+
+   - name: Go to the folder and execute command
+     command: chdir=/var/www/html ls
+
+   - name: Create a directory
+     file:
+      path: /var/www/html/product
+      state: directory
+      mode: '0755'
+
+   - name: Go to the folder and execute command
+     command: chdir=/var/www/html/product ls
+
+   - name: create files
+
+
+
+   - name: Copying directory
+
+
+
+
+    - name: Installs php-json
+      apt:
+        pkg: php-json
+        state: present
+        update_cache: yes
+
+
+    - name: Installs memcached
+      apt:
+        pkg: memcached
+        state: present
+        update_cache: yes
+
+    - name: Unzip packer to /usr/local/bin/packer
+    unarchive:
+        src: packer_0.8.6_linux_amd64.zip
+        dest: /usr/local/bin/packer
+
+
+
+
+
+
