@@ -8,9 +8,6 @@
         - php7.3
         - php7.3-mysql
         - php-mbstring
-        - php-zip
-        - unzip
-        - pwgen
         - php-json
         - memcached
         - software-properties-common
@@ -23,8 +20,8 @@
       copy: src=/root/aquarium-monitoring.sql dest=/tmp/aquarium-monitoring.sql
 
     - name: Create database
-      mysql_db: name=aquarium-monitoring state=present login_user='root' login_password='wordpass'
+      mysql_db: name=aquarium-monitoring state=present login_user={{lookup('env','DB_USER')}} login_password={{lookup('env','DB_PASSWORD')}}
 
     - name: Import data
-      mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user='root' login_password='wordpass'
+      mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user={{lookup('env','DB_USER')}} login_password={{lookup('env','DB_PASSWORD')}}
   I
