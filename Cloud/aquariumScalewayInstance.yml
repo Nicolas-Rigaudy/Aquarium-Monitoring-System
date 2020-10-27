@@ -1,27 +1,41 @@
 - hosts: localhost
+  vars_prompt:
+
+  - name: db_user
+    prompt: What is your username?
+    private: no
+
+  - name: db_password
+    prompt: What is your password?
+
   tasks:
-    - name: Installing dependencies
-      apt: name={{ item }} update_cache=yes state=latest
-      with_items:
-        - apache2
-        - mariadb-server
-        - php7.3
-        - php7.3-mysql
-        - php-mbstring
-        - php-json
-        - memcached
-        - software-properties-common
-        - python-mysqldb
-        - mariadb-client
-        - mariadb-common
-        - mariadb-server
 
-    - name: Copy database dump to tmp directory
-      copy: src=/root/aquarium-monitoring.sql dest=/tmp/aquarium-monitoring.sql
+  - name: Print a message
+    debug:
+      msg: 'Logging in as {{ db_user }} with password {{ db_password }}'
 
-    - name: Create database
-      mysql_db: name=aquarium-monitoring state=present login_user={{lookup('env','DB_USER')}} login_password={{lookup('env','DB_PASSWORD')}}
+  - name: Installing dependencies
+    apt: name={{ item }} update_cache=yes state=latest
+    with_items:
+      - apache2
+      - mariadb-server
+      - php7.3
+      - php7.3-mysql
+      - php-mbstring
+      - php-json
+      - memcached
+      - software-properties-common
+      - python-mysqldb
+      - mariadb-client
+      - mariadb-common
+      - mariadb-server
 
-    - name: Import data
-      mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user={{lookup('env','DB_USER')}} login_password={{lookup('env','DB_PASSWORD')}}
+  - name: Copy database dump to tmp directory
+    copy: src=/root/aquarium-monitoring.sql dest=/tmp/aquarium-monitoring.sql
+
+  - name: Create database
+    mysql_db: name=aquarium-monitoring state=present login_user={{ db_user }} login_password={{ db_password }}
+
+  - name: Import data
+    mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user={{ db_user )}} login_password={{ db_password }}
   I
