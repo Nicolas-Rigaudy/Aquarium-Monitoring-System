@@ -1,8 +1,8 @@
 {
   "variables":{
-    "project_id": "{{env SCW_DEFAULT_PROJECT_ID}}",
-    "access_key": "{{env SCW_ACCESS_KEY}}",
-    "secret_key": "{{env SCW_SECRET_KEY}}"
+    "project_id": "{{env `SCW_DEFAULT_PROJECT_ID`}}",
+    "access_key": "{{env `SCW_ACCESS_KEY`}}",
+    "secret_key": "{{env `SCW_SECRET_KEY`}}"
     },
   "builders": [
     {
@@ -13,10 +13,10 @@
       "image_name": "ubuntu-apache",
       "snapshot_name": "ubuntu-apache-snapshot",
       "type": "scaleway",
-      "image": "<BASE_IMAGE_ID>",
+      "image": "cf44b8f5-77e2-42ed-8f1e-09ed5bb028fc",
       "zone": "fr-par-1",
       "commercial_type": "DEV1-S",
-      "ssh_private_key_file": "/Users/myaccount/.ssh/id_rsa",
+      "ssh_private_key_file": "/root/.ssh/id_rsa",
       "ssh_username": "root"
     }
   ],
@@ -24,11 +24,15 @@
    {   
      "type": "shell",
      "inline": [
-         "sleep 30",
+        
          "apt-get update",
          "apt-get -y upgrade",
-         "apt-get install -y apache2"
+         "sync"
      ]   
-   }   
+   },
+   {
+     "type": "ansible",
+     "playbook_file": "/root/Ansible/aquariumScalewayInstance.yml" 
+   }    
  ]
 }
