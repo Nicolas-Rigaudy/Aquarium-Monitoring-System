@@ -1,9 +1,9 @@
 {
-  "variables": {                                                                
-    "project_id": "",                                                      
-    "access_key": "",                                                              
-    "secret_key": "",                                                           
-  },
+  "variables":{
+    "project_id": "{{env SCW_DEFAULT_PROJECT_ID}}",
+    "access_key": "{{env SCW_ACCESS_KEY}}",
+    "secret_key": "{{env SCW_SECRET_KEY}}"
+    },
   "builders": [
     {
       "project_id": "{{ user `project_id` }}",                        
