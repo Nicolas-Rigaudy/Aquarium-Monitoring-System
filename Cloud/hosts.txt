@@ -1,0 +1,2 @@
+[localhost]
+host1.example.org ansible_host=163.172.166.95 ansible_user=root

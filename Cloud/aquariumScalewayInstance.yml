@@ -1,9 +1,8 @@
-- hosts: web
-
-tasks:
+- hosts: localhost
+  tasks:
     - name: Installing dependencies
-    apt: name={{ item }} update_cache=yes state=latest
-    with_items:
+      apt: name={{ item }} update_cache=yes state=latest
+      with_items:
         - apache2
         - mariadb-server
         - php7.3
@@ -20,23 +19,12 @@ tasks:
         - mariadb-common
         - mariadb-server
 
-    - name: Download zip files
-    get_url:
-        url: https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip
-        dest: /
-        mode: '0440'
-
-    - name: Unzip packer to /usr/local/bin/packer
-    unarchive:
-        src: packer_1.6.4_linux_amd64.zip
-        dest: /usr/local/bin/packer
-
     - name: Copy database dump to tmp directory
-    copy: src=/root/aquarium-monitoring.sql dest=/tmp/aquarium-monitoring.sql
+      copy: src=/root/aquarium-monitoring.sql dest=/tmp/aquarium-monitoring.sql
 
     - name: Create database
-        mysql_db: name=aquarium-monitoring state=present login_user='root' login_password='wordpass'
+      mysql_db: name=aquarium-monitoring state=present login_user='root' login_password='wordpass'
 
     - name: Import data
-        mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user='root' login_password='wordpass'
+      mysql_db: name=aquarium-monitoring state=import target=/tmp/aquarium-monitoring.sql login_user='root' login_password='wordpass'
   I
