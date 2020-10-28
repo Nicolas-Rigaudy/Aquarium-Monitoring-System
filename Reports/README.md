@@ -1,57 +1,21 @@
 # Aquarium Monitoring System
 
-## Notre projet
-Il s'agit d'un système de monitoring pour aquarium qui utilise une
-raspberry Pi connectée a un capteur de temperature, un capteur de
-luminosité et une caméra (utilisée avec openCV pour de la
-reconnaissance d'image sur les poissons) afin de collecter des
-informations essentielles a la santé des poissons de l'aquarium. Les
-données sont ensuite envoyées sur une app Android via une API Rest
-afin que l'utilisateur puisse voir l'evolution de ces données.
-
-## Questions
-
-
-### ANSIBLE
-
-Pour Ansible, vaut-il mieux créer un script qui gere la configuration
-de l'instance Scaleway ou un script qui gere la configuration de la
-raspberry, ou encore les deux?
-
-Pour la raspberry, serait-il nécessaire d'avoir déja tout fini du cote
-du code intégré dessus, de sa configuration et des différents
-logiciels, librairies, packages a installer dessus nécessaires pour
-notre projet avant de pouvoir mettre cette configuration dans le code
-Ansible?
-
-Je ne suis pas sur d'avoir tout a fait compris les possibilités que
-nous amène Ansible en termes de ce qu'il faut avoir fini avant la
-configuration. Nous nous posions cette question par peur d'être
-limités sur le temps aue nous aurions a allouer a cette parie si elle
-requiert que tout le reste de notre projet soit fini ou presque.
+## OUR PROJECT
+As a 4th year engineering project in the IoT major, we were first given a list of sample projects we could work on. However, the idea of an aquarium fish health monitoring system was already in our minds and we decided to go forward with our own project after getting approval from our teachers. Achille’s father is passionate about fish and owns a big reef tank with 8 fish from 6 different species and this was the perfect test subject for our system. Being ourselves passionate with new technologies and connected systems, we wanted to make a smart monitoring system that can be adapted and scaled very easily to different aquarium tanks, for professionals or individuals.
+The first information we wanted the system to give the user was through image recognition of the fish. Using a camera, we wanted to be able to count the fish and differentiate the species so that we could show the user each fish separately to keep track on its appearance (a lot of health problems can have visual symptoms on the fish).
+We then decided to add sensors to our project such as temperature and brightness because factors like those are very important for fish and coral health. 
+Finally, we chose to create an Android app especially for individuals, but also usable by professionals, which would allow the user to access in a smart, intuitive and entertaining way all of the data and information about his aquarium. 
+To bring this project to life, we had all the necessary tools at our disposal, including:
+*	Raspberry Pi nano computer
+*	Camera module
+*	Temperature and brightness sensors
+*	Programming languages and software that we had already learned in class to build the code for the app and for the sensors
+*	Test aquarium
 
 
-### API REST
-Nous avons pour but d'utiliser une API rest, mais hélas nous sommes un
-peu perdus. Nous avons d'un coté une raspberry Pi qui récupère et
-analyse des informations de différents capteurs(température, vidéo,
-luminosité).
-De l'autre coté nous avons une application (android) qui récupère les
-informations et les affiche pour que l'utilisateur puisse suivre ces
-données.
+## Cloud
+We used a Scaleway instance to host our database. In this manner, the data could come directly from the raspberry Pi and be sent to the Android app through the cloud. This enabled us to protect our data from potential crashes of the Raspberry Pi and to create a simpler link between all our project elements.
 
->Nous étions partis en créant une API rest sur Android Studio mais
->j'ai l'impression qu'il faudrait mieux commencer par configurer notre
->instance Scaleway au préalable.
->
->> - Quelle type d'instance devons-nous prendre? (la DEV1-S sera t'elle suffisante?)
->> - J'ai vu qu'il y avait plusieurs API sur Scaleway, laquelle devons-nous
->>   prendre?
->> - De quelle manière devrions nous faire passer nos informations de la
->>   raspberry a l'instance et ensuite a l'application ?
-
-### Terraform et Packer
-
-Nous nous demandions aussi quelles seraient les utilisations
-possibles de terraform et packer au sein de notre projet. Seront-ils
-utiles seulement pour la définition de l'instance Scaleway?
+### Ansible/Terraform/Packer
+In order to manage this instance dynamically and make it so that it could easily be reproduced, we used three tools: Terraform, Ansible and Packer.
+Terraform enables us to create new instances via Scaleway in case our main instance crashes or gets destroyed. Then Packer loads this instance with a template image and launches Ansible, which provisions our instance with all the required dependencies and rebuilds our database using an SQL dump. Packer finishes off by taking a new image of the configured instance.
