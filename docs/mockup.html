@@ -1,0 +1,178 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Aquarium Monitoring System — Android UI</title>
+<!-- Faithful HTML rebuild of the 2020 Android layouts (res/layout/*.xml) so the UI
+     can be shown without an emulator. Screenshot with docs/shot.sh. -->
+<style>
+  :root {
+    --ink: #25323E;          /* rectangle_1 / top bar */
+    --card: rgba(252,253,255,.9);  /* fish_bg, temp_bg, data_card #E6FCFDFF */
+    --sky: #87CEEB;          /* ellipse_1 */
+    --pill: rgba(98,171,203,.9);   /* temp.xml #E662ABCB */
+    --primary: #6200EE;      /* colorPrimary */
+    --accent: #03DAC5;       /* colorAccent */
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: #11161b;
+    font-family: Roboto, "Noto Sans", "DejaVu Sans", sans-serif;
+    display: flex; gap: 32px; padding: 32px; width: max-content;
+  }
+  .phone {
+    width: 360px; height: 760px; position: relative; overflow: hidden;
+    border-radius: 18px; background: #fff;
+    box-shadow: 0 12px 40px rgba(0,0,0,.55);
+  }
+  .wall {
+    position: absolute; inset: 0;
+    background: url("../ANDROID%20APP/Android_REST/app/src/main/res/drawable-v24/saltwater.jpg") center/cover;
+  }
+  .status {
+    position: absolute; top: 0; left: 0; right: 0; height: 24px; z-index: 5;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 10px; font-size: 11px; color: #fff;
+  }
+
+  /* ---- screen 1 : MainPage (activity_main_page.xml) ---- */
+  .topbar {
+    position: absolute; top: 0; left: 0; right: 1px; height: 93px;
+    background: rgba(37,50,62,.8);
+    display: flex; align-items: center; padding-left: 22px;
+  }
+  .topbar h1 { color: #fff; font-size: 24px; font-weight: 700; line-height: 1.15; }
+  .refresh {
+    position: absolute; right: 22px; top: 16px;
+    width: 60px; height: 60px; border-radius: 50%; background: var(--sky);
+    display: grid; place-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.35);   /* elevation 4dp */
+  }
+  .fishcard {
+    position: absolute; top: 113px; left: 20px;
+    width: 320px; height: 300px; border-radius: 5px; background: var(--card);
+  }
+  .fishcard .title { position: absolute; top: 12px; width: 100%; text-align: center; font-size: 22px; color: #000; }
+  .fishcard .photo {
+    position: absolute; top: 50px; left: 60px; width: 200px; height: 200px;
+    border-radius: 50%; object-fit: cover;
+  }
+  .fishcard .species { position: absolute; top: 262px; width: 100%; text-align: center; font-size: 22px; color: #212121; }
+  .arrow { position: absolute; top: 125px; width: 50px; height: 50px; fill: #5a5a5a; }
+  .arrow.l { left: 5px; }
+  .arrow.r { right: 5px; transform: rotate(180deg); }
+
+  .list { position: absolute; top: 413px; left: 0; right: 0; padding: 20px; }
+  .datacard {
+    width: 320px; height: 80px; margin-bottom: 20px; padding: 10px;
+    border-radius: 5px; background: var(--card);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);   /* cardElevation 2dp */
+    display: flex; align-items: center;
+  }
+  .datacard .dot { width: 60px; height: 60px; border-radius: 50%; background: var(--sky); display: grid; place-items: center; }
+  .datacard .name { flex: 1; padding: 0 10px; font-size: 14px; color: #212121; }
+  .datacard .pill {
+    width: 75px; height: 45px; border-radius: 10px; background: var(--pill);
+    display: grid; place-items: center; font-size: 14px; color: #212121;
+  }
+
+  /* ---- screen 2 : Info_Fish_Activity (activity_info_fish.xml) ---- */
+  .infocard {
+    position: absolute; inset: 20px; border-radius: 5px; background: var(--card); padding: 20px;
+  }
+  .infocard h2 { font-size: 30px; font-weight: 400; text-align: center; margin-top: 46px; color: #212121; }
+  .infocard p { font-size: 18px; line-height: 25px; margin-top: 28px; color: #212121; }
+
+  /* ---- screen 3 : TemperatureTableActivity (activity_main.xml) ---- */
+  .actionbar {
+    height: 56px; background: var(--primary); color: #fff;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 16px; font-size: 20px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; color: #212121; }
+  th, td { padding: 12px 20px; text-align: left; }
+  thead tr { background: #cccccc; font-weight: 700; }
+  tbody tr { border-bottom: 1px solid #e0e0e0; }
+  tbody tr:nth-child(even) { background: #f5f5f5; }
+  col.id { width: 25%; } col.ts { width: 50%; } col.val { width: 25%; }
+  .fab {
+    position: absolute; right: 16px; bottom: 16px; width: 56px; height: 56px;
+    border-radius: 50%; background: var(--accent); display: grid; place-items: center;
+    box-shadow: 0 6px 10px rgba(0,0,0,.3);
+  }
+</style>
+
+<!-- ============ 1. Home ============ -->
+<div class="phone">
+  <div class="wall"></div>
+  <div class="status"><span>21:04</span><span>▾ ▮ 87%</span></div>
+  <div class="topbar">
+    <h1>Saltwater Tank 1<br>- Home</h1>
+    <div class="refresh">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="#111"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08A6 6 0 1 1 12 6a5.9 5.9 0 0 1 4.22 1.78L13 11h7V4z"/></svg>
+    </div>
+  </div>
+
+  <div class="fishcard">
+    <div class="title">Fish</div>
+    <svg class="arrow l" viewBox="0 0 24 24"><path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/></svg>
+    <img class="photo" src="../ANDROID%20APP/Android_REST/app/src/main/res/drawable-v24/ellipse_fish_1.jpg" alt="Yellow Tang">
+    <svg class="arrow r" viewBox="0 0 24 24"><path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/></svg>
+    <div class="species">Yellow Tang</div>
+  </div>
+
+  <div class="list">
+    <div class="datacard">
+      <div class="dot"><svg width="30" height="30" viewBox="0 0 24 24" fill="#25323E"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5v3m0 14v3M2 12h3m14 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M19.8 4.2l-2.1 2.1M6.3 17.7l-2.1 2.1" stroke="#25323E" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div class="name">Brightness</div>
+      <div class="pill">100%</div>
+    </div>
+    <div class="datacard">
+      <div class="dot"><svg width="26" height="26" viewBox="0 0 24 24" fill="#25323E"><path d="M13 12.6V5a1 1 0 1 0-2 0v7.6a3 3 0 1 0 2 0z"/></svg></div>
+      <div class="name">Temperature</div>
+      <div class="pill">25°C</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 2. Fish info ============ -->
+<div class="phone">
+  <div class="wall"></div>
+  <div class="status"><span>21:04</span><span>▾ ▮ 87%</span></div>
+  <div class="infocard">
+    <h2>Yellow Tang</h2>
+    <p>
+      <b>Order:</b> Perciformes<br>
+      <b>Genus:</b> Zebrasoma flavescens<br>
+      <b>Family:</b> Acanthuridae<br>
+      <b>Descriptor:</b> Bennett, 1828<br>
+      <b>Aquarium area:</b> Bottom<br>
+      <b>Maintenance difficulty:</b> Amateur aquarist<br>
+      <b>Food:</b> Algae, small crustaceans and zooplankton<br>
+      <b>Water type:</b> Sea Water-Reef<br>
+      <b>PH:</b> 7.5 to 8.5<br>
+      <b>Temperature:</b> 23°C to 28°C<br>
+      <b>Sociability:</b> They can be aggressive with fish brought into the aquarium after them.
+    </p>
+  </div>
+</div>
+
+<!-- ============ 3. History table ============ -->
+<div class="phone">
+  <div class="actionbar"><span>Rest</span><span style="font-size:22px">⋮</span></div>
+  <table>
+    <colgroup><col class="id"><col class="ts"><col class="val"></colgroup>
+    <thead><tr><th>Id</th><th>Timestamp</th><th>Temperature</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>30/09/2020/12:34:50</td><td>25</td></tr>
+      <tr><td>2</td><td>30/09/2020/18:15:17</td><td>22</td></tr>
+      <tr><td>3</td><td>30/09/2020/18:35:02</td><td>32</td></tr>
+      <tr><td>4</td><td>30/09/2020/18:35:46</td><td>22</td></tr>
+      <tr><td>5</td><td>30/09/2020/18:36:03</td><td>54</td></tr>
+      <tr><td>6</td><td>30/09/2020/19:26:56</td><td>22</td></tr>
+      <tr><td>7</td><td>01/10/2020/09:12:41</td><td>24</td></tr>
+      <tr><td>8</td><td>01/10/2020/14:03:08</td><td>25</td></tr>
+    </tbody>
+  </table>
+  <div class="fab">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg>
+  </div>
+</div>
