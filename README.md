@@ -1,13 +1,18 @@
 # Aquarium Monitoring System — HCFF
 
-**Watching fish for signs of illness.** Most fish diseases show up first on the fish
-itself — a mark on the skin, a change in colour, a fish that stops moving with the others —
-and on the water it lives in. HCFF is an end-to-end IoT system that watches both: a camera
-and sensors on the tank, a cloud database, and an Android app that puts a tank's readings
-and each individual fish one tap away from its owner.
+**The goal was to spot sick fish before their owner does.** Ich, fin rot, velvet, fungal
+infection — nearly every common aquarium disease announces itself visually first: white
+spots on the skin, frayed fins, a colour that dulls, a fish that stops swimming with the
+others. And nearly all of them are triggered by the water going wrong before that: a heater
+drifting two degrees, a lighting cycle breaking, stress that opens the door to a parasite
+already in the tank.
 
-4th-year engineering project (IoT major, 2020), designed and tested on a real 500 L reef
-tank holding 8 fish from 6 species.
+HCFF watches both halves of that story. A camera on the tank looking at the fish, sensors
+in the water looking at what stresses them, a cloud database keeping the history, and an
+Android app that puts every reading and every individual fish one tap away from the owner.
+
+4th-year engineering project (IoT major, 2020), designed and tested on a real reef tank
+holding 8 fish from 6 species.
 
 ![Android app screens](docs/app-screens.png)
 
@@ -18,23 +23,25 @@ the temperature history pulled from the cloud database.*
 
 ## Context
 
-The brief was open, and we brought our own idea: Achille's father keeps a large reef tank,
-and checking on it is a daily, manual, easy-to-get-wrong routine. Coral and fish are
-sensitive to a degree of temperature or a lighting cycle drifting, and a sick fish is often
-visible before it is in trouble — if someone is looking.
+The brief was open and we brought our own idea. Achille's father keeps a large reef tank,
+and checking on it is a daily, manual, easy-to-get-wrong routine: count the fish, look each
+one over, read the thermometer, notice the light came on. A disease caught on day one is
+treatable; caught on day five it has usually spread. But it only gets caught if someone is
+looking, and nobody looks at 3 a.m. or while away for a week.
 
-So the system was designed around **fish health** first, not around the sensors:
+So every part of the system exists to answer one question — *is a fish getting sick?* —
+from a different angle:
 
-1. **See each fish.** A camera counts the fish and (in the target design) tells the species
-   apart, so the app can show them one by one and the owner can track how each one *looks*
-   over time — visual symptoms being the earliest warning of most health problems.
-2. **Watch what they live in.** Water temperature and tank lighting, sampled every minute.
-3. **Put it in the owner's hand.** An Android app with per-fish care sheets, so a reading
-   can be judged against what the species actually needs — a Yellow Tang wants 23–28 °C,
-   a Clark's Anemonefish 22–26 °C, and the app tells you which fish you're looking at.
+| Angle | What it does | Why it matters for disease |
+|---|---|---|
+| **Look at the fish** | Camera + OpenCV: detect and count the fish on screen | A fish that stops appearing has hidden, is being bullied, or is too weak to swim — often the first symptom |
+| **Look at the water** | Two temperature probes and a light sensor, sampled every minute | Temperature swings and broken light cycles are the stressors that let parasites take hold |
+| **Keep the history** | Every reading timestamped into a cloud database | A single 26 °C reading says nothing; a slow drift over three days is the actual warning |
+| **Show it per fish** | Android app: carousel of the individual fish + a care sheet per species | 24 °C is fine for a Clark's Anemonefish and cold for a Clown Anemonefish — a reading only means something against the species in the tank |
 
-The scope was cut deliberately along the way (see [Challenges](#challenges)) — species
-recognition would have been an entire AI project on its own — but the direction is the point.
+That last one is the point of the fish carousel. The app doesn't just show a number, it
+shows *this fish*, its species, and the range that species needs, so the owner can judge a
+reading instead of just reading it.
 
 ![The test tank with the Raspberry Pi, breadboard and camera module](docs/tank-setup.jpg)
 
@@ -104,24 +111,44 @@ in Python: lighter, and it restarts on its own if a run dies.
 and `Brightness` implement it, and `main.py` just iterates a list. Adding a pH or water-level
 probe means one new subclass and one line in that list.
 
-## Image recognition
+## Identifying disease: the vision pipeline
 
-The goal was to recognise fish by species and flag visual signs of disease. Doing that
-properly meant TensorFlow and a hand-labelled dataset of *these* fish — a whole project of
-its own. We scaled it down to what OpenCV could do honestly.
+This is the part that was meant to name a disease. The full pipeline we designed has four
+stages, each one a prerequisite for the next:
+
+1. **Find the fish in the frame** — separate animals from coral, rock and anemones.
+2. **Count them** — a missing fish is itself a symptom, and the count is the cheapest signal
+   the system can produce.
+3. **Identify the species** — so each fish gets a stable identity across days and can be
+   compared to how *it* looked yesterday, not to a generic fish.
+4. **Read its appearance** — white spots, frayed fins, dulled colour, and cross-reference
+   against the water history to say *why*.
+
+Stages 1 and 2 are implemented and working. Stages 3 and 4 needed TensorFlow and a
+hand-labelled dataset of these specific fish, photographed in these specific lighting
+conditions, in enough quantity to train on — a complete AI project sitting inside a
+semester-long IoT project. We chose to build the pipeline that feeds it rather than fake
+the end of it.
+
+### What runs today
 
 | Frame differencing → contours | Contours filtered by minimum size → fish |
 |---|---|
 | ![OpenCV contours](docs/opencv-contours.jpg) | ![OpenCV bounding boxes](docs/opencv-boxes.jpg) |
 
 Consecutive frames are converted to greyscale, blurred and thresholded, then compared;
-contours that moved between two frames are drawn. Filtering those contours by a minimum
-size drops most of the false positives — drifting debris, waving anemones — and leaves the
-fish. Counting the boxes per frame gives a fish count, averaged over the clip when the
-program exits.
+contours that moved between the two frames are drawn. Movement is the discriminator here —
+coral and rock hold still, fish do not — which is what makes stage 1 work without any
+training data at all.
+
+The left image is the raw result: fish outlined, but so is every swaying anemone tip and
+piece of drifting debris. Filtering contours by a minimum area removes them, and the right
+image is what's left — three fish, three boxes. Counting boxes per frame gives a live fish
+count, averaged over the clip when the program exits (2.5 on the test footage, for a scene
+where fish swim in and out of view).
 
 It detects and counts moving fish. It does **not** identify species or diagnose anything —
-that was the next step, not a delivered one.
+those are stages 3 and 4, and they were never built.
 
 ## The Android app
 
@@ -177,15 +204,14 @@ reconstructs the three screens from the actual layout XML, colours and image ass
 docs/shot.sh    # docs/mockup.html -> docs/app-screens.png (needs Chrome)
 ```
 
-## Cloud and infrastructure
+## Cloud
 
 The database and REST API ran on a Scaleway DEV1-S instance (Ubuntu, `fr-par-1`) rather than
-on the Pi, so a Pi crash or an SD card failure could not take the history with it.
+on the Pi, so a Pi crash or a dead SD card could not take the history with it — and the app
+could reach the data from anywhere without punching a hole into a home network.
 
-The instance is reproducible from code: **Terraform** creates the server and its public IP,
-**Packer** builds an image from it, and the **Ansible** playbook installs Apache, MariaDB and
-PHP and restores `aquarium-monitoring.sql`. Packer snapshots the configured result, so the
-whole backend can be rebuilt from scratch after a crash.
+The whole instance is rebuildable from code; see
+[After the report](#after-the-report-making-the-backend-disposable).
 
 ## Repository layout
 
@@ -214,17 +240,48 @@ The system ran, on a real tank, in 2020. It cannot be launched as-is today:
 The Python and Android code, the Terraform/Packer/Ansible definitions and the SQL dump are
 all here, so the pieces are readable and reusable even though the whole no longer stands up.
 
-## What was planned next
+## After the report: making the backend disposable
 
-Graphs instead of raw tables (as in the Figma prototype), pH and water-level sensors, an
-automatic feeder for when the owner is away, notification thresholds and user accounts —
-and then the multi-tank version: many HCFF units on one database, so a public aquarium could
-watch every basin at once.
+The written report stops in early October 2020. The last three weeks of commits are about
+something it doesn't cover, and it's the piece that mattered most for a system meant to run
+unattended for months: **the cloud side stopped being a pet server**.
 
-The fifth-year follow-up took that further on paper: one **SmartMesh IP** mote per tank, a
-much wider sensor set (pH, salinity, NO₂, NH₃, dissolved oxygen, alkalinity, TDS, EC, leak),
-actuators (heater, LED, air and water pumps, RO filter, feeder), Node-RED for control logic
-and alerting, and a Django + React web app for multi-tank operators.
+The problem was concrete. The disease signal is the *history* — a temperature drift over
+days, a fish count dropping — and all of it lived on one Scaleway instance that a bad
+upgrade or a stopped billing cycle could erase. So we rebuilt the backend as code:
+
+1. **Terraform** (`Cloud/scaleway.tf`) declares the instance and its public IP: a DEV1-S on
+   `ubuntu-focal` in `fr-par-1`. `terraform apply` gives a fresh, empty server on demand.
+2. **Ansible** (`Cloud/aquariumScalewayInstance.yml`) provisions it: Apache, MariaDB, PHP and
+   the modules the REST API needs, then creates the `aquarium-monitoring` database and
+   imports `aquarium-monitoring.sql` — schema *and* the readings already captured. DB
+   credentials are prompted at run time rather than committed (`vars/main.yml` ships empty).
+3. **Packer** (`Cloud/packer.json`) drives the whole thing headlessly: it boots a build
+   server, runs `apt update && upgrade`, hands off to the Ansible playbook, and snapshots the
+   configured machine as a reusable image.
+
+The result is that losing the instance costs one command instead of a weekend, and the
+data survives it. Two design decisions in there are worth naming: the SQL dump is restored
+by the playbook rather than the schema being recreated task by task (one source of truth,
+and the history comes back with it), and Packer calls Ansible rather than duplicating it, so
+there is exactly one description of what the server contains.
+
+### Still open
+
+These were on the report's wish list and are **not** in this repository — nobody built them
+before the project closed:
+
+- Graphs instead of raw history tables (they exist as Figma screens, not as code).
+- pH and water-level sensors — cheap to add thanks to the `Sensor` base class, but not added.
+- Automatic feeder, notification thresholds, user accounts.
+- Species recognition and disease classification — stages 3 and 4 of the vision pipeline.
+- The multi-tank version for professional aquariums.
+
+The fifth-year follow-up designed that last one on paper: one **SmartMesh IP** mote per tank,
+a much wider sensor set (pH, salinity, NO₂, NH₃, dissolved oxygen, alkalinity, TDS, EC,
+leak), actuators (heater, LED, air and water pumps, RO filter, feeder), Node-RED for control
+logic and alerting, and a Django + React web app for multi-tank operators. It stayed a
+proposal.
 
 ## Challenges
 
